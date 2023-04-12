@@ -1,1 +1,20 @@
-git
+1.添加用户名和邮箱地址
+git config --global user.name "123-56-8@163.com"
+git config --global user.email "123-5-8@163.com"
+2.查看用户名和邮箱地址
+git config --global user.name
+git config --global user.email
+3.创建仓库
+先创建空目录，然后进入空目录，再仓库初始化
+git init
+4.常用指令
+查看当前状态，git status
+添加到缓存区，git add 文件名		#git add test.txt
+提交至版本库，git commit -m "注释内容"	# git commit -m "The first add and commit!"
+版本回退，先查看版本，确定需要回到的时刻点git log,或者git log --pretty=oneline
+                   回退操作，git reset --hard 提交编号
+版本回退后，要想回到先前的操作，需要查看最新的commit id，指令git reflog
+
+
+use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
